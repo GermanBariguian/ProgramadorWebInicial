@@ -2,3 +2,6 @@ galletitas
 pan
 harina
 huevos
+agua
+coca
+jugo
