@@ -11,25 +11,22 @@
 
 <body>
     <script>
-        var num;
-        num = prompt("Ingrese distancia al lugar para poder determinar el medio de transporte (metros)", "");
-        var transportes = ["pie", "bicicleta", "colectivo", "auto", "avión"];
+        var metros = 1500;
+        var transporte = "";
 
-        if (num <= 1000) {
-            document.write("Se recomienda ir a " + transportes[0]);
+        if (metros > 0 && metros <= 1000) {
+            transporte = "pie";
+        } else if (metros > 1000 && metros <= 10000) {
+            transporte = "bicicleta";
+        } else if (metros > 10000 && metros <= 30000) {
+            transporte = "colectivo";
+        } else if (num > 30000 && num <= 100000) {
+            transporte = "auto";
+        } else if (num > 100000) {
+            transporte = "avión";
         }
-            else if (num > 1000 && num <= 10000) {
-            document.write("Se recomienda ir con " + transportes[1]);
-            }
-                else if (num > 10000 && num <= 30000) {
-                document.write("Se recomienda ir con " + transportes[2]);
-                }
-                    else if (num > 30000 && num <= 100000) {
-                    document.write("Se recomienda ir en " + transportes[3]);
-                    }
-                        else if (num > 100000) {
-                    document.write("Se recomienda ir en " + transportes[4]);
-        }
+
+        console.log("Para " + metros + " metros recomendamos ir en " + transporte);
     
     </script>
 </body>
