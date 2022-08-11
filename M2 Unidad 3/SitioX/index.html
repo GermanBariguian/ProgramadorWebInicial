@@ -31,13 +31,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Novedades</a>
+                        <a class="nav-link" href="novedades.html">Novedades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Producciones</a>
+                        <a class="nav-link" href="producciones.html">Producciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contactanos</a>
+                        <a class="nav-link" href="#contactanos">Contactanos</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +46,7 @@
 
     <div class="container-fluid">
         <div id="home" class="row align-items-center hero">
-            <div class="col-lg-3 offset-lg-2">
+            <div class="col-lg-4 offset-lg-2">
                 <p>Llevate una buena impresión</p>
                 <h1>GRÁFICA BARIGUIAN</h1>
                 <p>Brindamos atención personalizada y una excelente calidad de servicio con precios competitivos,
@@ -56,13 +56,15 @@
     </div>
     <!-- fin Home-->
 
-    <!-- inicio Novedades -->
+
+
     <div class="row my-3">
+        <!-- inicio Novedades -->
         <div id="novedades" class="col-md-5 offset-md-2 py-3">
             <h2>Novedades</h2>
             <ul class="lista-novedades">
-                <li><a href="#"><img src="img/promo julio.jpeg">Promo Julio</a></li>
-                <li><a href="#"><img src="img/promo 2x1.jpeg">Promo 2x1</a></li>
+                <li><a href="novedades.html"><img src="img/promo agosto.jpeg">Promo Agosto</a></li>
+                <li><a href="novedades.html"><img src="img/promo 2x1.jpeg">Promo 2x1</a></li>
             </ul>
         </div>
         <!-- fin Novedades -->
@@ -75,19 +77,19 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <h5>Tarjetas</h5>
-                            <img src="img/tarjetas.jpeg" class="d-block w-100">
+                            <a href="producciones.html"><img src="img/tarjetas.jpeg" class="d-block w-100"></a>
                         </div>
                         <div class="carousel-item">
                             <h5>Plotter</h5>
-                            <img src="img/plotter.jpeg" class="d-block w-100">
+                            <a href="producciones.html"><img src="img/plotter.jpeg" class="d-block w-100"></a>
                         </div>
                         <div class="carousel-item">
                             <h5>Folletos</h5>
-                            <img src="img/folleto.jpeg" class="d-block w-100">
+                            <a href="producciones.html"><img src="img/folleto.jpeg" class="d-block w-100"></a>
                         </div>
                         <div class="carousel-item">
                             <h5>Packaging</h5>
-                            <img src="img/packaging.jpeg" class="d-block w-100">
+                            <a href="producciones.html"><img src="img/packaging.jpeg" class="d-block w-100"></a>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -103,13 +105,52 @@
                 </div>
             </div>
         </div>
+        <!-- fin Producciones -->
     </div>
+
+
+
+
+    <div class="row my-3 staff">
+        <!-- inicio Nosotros -->
+        <div id="nosotros" class="col-md-5 offset-md-2 py-3">
+            <h2>Nosotros</h2>
+            <div class="card mb-3" style="max-width: 600px;">
+                <div class="row g-0">
+                    <div class="col-md-1000">
+                        <img src="img/grafica bariguian.jpeg" class="img-fluid rounded-start" alt="¿Quiénes somos?">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">¿Quiénes somos?</h5>
+                            <p class="card-text"> Una imprenta familiar que se dedica a cumplir con todos los pedidos en
+                                tiempo y forma mejor que nadie, siempre dando todo lo mejor y más.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin Nosotros -->
+
+        <!-- inicio Visitanos -->
+        <div class="col-md-3 my-3">
+            <div id="visitanos">
+                <h2>Visitanos</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7061509215705!2d-58.42541758417418!3d-34.636865366760986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbaf2a7e8fa5%3A0xb68cd2fd32e3c6c0!2sMet%C3%A1n%204201%2C%20C1240AEM%20CABA!5e0!3m2!1ses-419!2sar!4v1660089138168!5m2!1ses-419!2sar"
+                    width="580" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- fin Visitanos -->
     </div>
-    <!-- fin Producciones -->
+
+
+
 
     <!-- inicio Contactanos-->
     <div class="container-fluid">
-        <div class="row text-center contactanos">
+        <div id="contactanos" class="row text-center">
             <h2>Contactanos</h2>
             <ul>
                 <li>graficabariguian@hotmail.com</li>
@@ -123,11 +164,15 @@
         </div>
 
     </div>
-    <!-- fin Contactanos-->
+    <!-- fin Contactanos -->
 
+    <!-- fin contenedor principal-->
     <footer>
         <p class="text-center">Diseñado por Germán Bariguian</p>
     </footer>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

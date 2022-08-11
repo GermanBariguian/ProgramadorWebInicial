@@ -17,7 +17,10 @@ h2 {
     background-size: cover;
     height: 0.5vh;
     min-height: 600px;
-    color: rgb(0, 0, 0);
+    color: rgb(17, 27, 100);
+    font-weight: 1000;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* inicio Novedades */
@@ -28,7 +31,7 @@ h2 {
 }
 
 .lista-novedades li {
-    margin: 4px 0;
+    margin: 12px 0;
 }
 
 .lista-novedades li a {
@@ -56,24 +59,37 @@ h2 {
 }
 
 .lista-novedades li a:hover img {
-    filter: none;  
+    filter: none;
     margin-right: 1.4rem;
     opacity: 1;
 }
+
 /* fin Novedades */
 
 /* inicio Producciones */
 .producciones {
     background-color: #a3c9e8;
     padding-bottom: 4rem !important;
+    text-align: center;
 }
 
 .carousel-item {
     text-align: center;
     text-transform: uppercase;
-    padding: 50px 20px;
+    padding: 15px 15px;
 }
+
 /* fin Producciones */
+
+
+/* inicio Nosotros */
+
+.staff {
+    background: #efefef;
+}
+
+/* fin Nosotros */
+
 
 /* inicio Contactanos */
 
